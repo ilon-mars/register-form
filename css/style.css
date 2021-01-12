@@ -108,6 +108,14 @@ input{
           align-items:center;
 }
 
+.form-group label{
+  margin-right: 5px;
+}
+
+.form-group input{
+  flex-shrink: 1;
+}
+
 .birth-date{
   max-width: 160px;
 }
@@ -145,7 +153,9 @@ span::before{
 }
 
 label .experience-radio:checked + span::before, label .policy:checked + span::before{
-  content: '✓';
+  content: '';
+  background: url('../img/checkmark.png') no-repeat center center;
+  background-size: contain;
   font-size: 34px;
 }
 
@@ -224,6 +234,11 @@ label .experience-radio:checked + span::before, label .policy:checked + span::be
   .policy-label {
     margin-left: 20px;
   }
+
+  .form-group input{
+    max-width: 200px;
+  }
+
 }
 
 @media (max-width: 320px){
